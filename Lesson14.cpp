@@ -105,13 +105,8 @@ bool GameOver = false;
     }
 
 */
-
-#include <iostream>
-#include <vector>
-#include <cmath>
-
-int main(){
-    {
+/*
+{
         int cnt = 5;
         int matrix1[4][4] = { { 1,2,3,4 },
                              { 4,1,2,3 },
@@ -143,6 +138,28 @@ int main(){
                 std::cout << matrix1[a][b];
             }
             std::cout << std::endl;
+        }
+        */
+
+#include <iostream>
+#include <vector>
+#include <cmath>
+
+int main(){
+     float matrixA[4][4] = { { 1.f, 2.f, 3.f, 4.f},
+                            { 5.f, 6.f, 7.f, 8.f},
+                            { 9.f,10.f,11.f,12.f},
+                            {13.f,14.f,15.f,16.f}
+    };
+    float VecB[4] = {1.f,2.f,3.f,4.f };
+    float VecC[4]{0.f };
+    for (int i = 0; i < 4; i++) {
+        for (int o = 0; o < 4; o++) {
+            VecC[i] += (matrixA[i][o] * VecB[o]);
+        }
+    }
+        for (int a = 0; a < 4; a++) {
+            std::cout << VecC[a] << ' ';
         }
 
     }
