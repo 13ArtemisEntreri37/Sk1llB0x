@@ -1,7 +1,6 @@
-﻿#include <iostream>
+#include <iostream>
 #include <vector>
 #include <cmath>
-/*
 int main() {
     int snake[5][5];
     int num = 0;
@@ -16,14 +15,4 @@ int main() {
         num += 5 - config;
         config *= -1;
     }  
-}
-*/
-int main() {
-    int a = 5;
-    int b = 10
-        std::cout << "LOL";
-        std::cout << a << b;
-    std::swap(a, b);
-        std::cout << a << b;
-
 }
