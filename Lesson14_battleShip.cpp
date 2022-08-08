@@ -185,10 +185,10 @@ int main() {
 
     while (damage_1 != 20 && damage_2 != 20) {
         damage_1 += shot(puddle2, plName, damage_2);
-        if (damage_1 == 4)continue;
+        if (damage_1 == 20)continue;
         plName = (name(plName));
         damage_2 += shot(puddle1, plName, damage_1);
-        if (damage_1 == 4)continue;
+        if (damage_1 == 20)continue;
         plName = (name(plName));
     }
     std::cout << plName << " WIN!!!" << std::endl;
